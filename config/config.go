@@ -60,30 +60,37 @@ func (c *Config) RunMigration() {
 			{
 				ID:       "M0001",
 				MenuName: "Sayur Lodeh",
+				Price:    2000,
 			},
 			{
 				ID:       "M0002",
 				MenuName: "Perkedel",
+				Price:    1000,
 			},
 			{
 				ID:       "M0003",
 				MenuName: "Nasi Putih",
+				Price:    5000,
 			},
 			{
 				ID:       "M0004",
 				MenuName: "Tempe Orek",
+				Price:    1000,
 			},
 			{
 				ID:       "M0005",
 				MenuName: "Tumis Kangkung",
+				Price:    2000,
 			},
 			{
 				ID:       "M0006",
 				MenuName: "Es Teh Tawar",
+				Price:    1000,
 			},
 			{
 				ID:       "M0007",
 				MenuName: "Es Teh Manis",
+				Price:    1500,
 			},
 		})
 

@@ -5,6 +5,8 @@ import "gorm.io/gorm"
 type Menu struct {
 	ID       string `gorm:"size:5;primaryKey"`
 	MenuName string `gorm:"size:100"`
+
+	Price int
 	gorm.Model
 }
 
