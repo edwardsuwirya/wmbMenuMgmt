@@ -1,9 +1,9 @@
 package main
 
-import "github.com/edwardsuwirya/wmbMenuMgmt/config"
+import (
+	"github.com/edwardsuwirya/wmbMenuMgmt/api"
+)
 
 func main() {
-	appConfig := config.NewConfig()
-	appConfig.RunMigration()
-	appConfig.StartEngine()
+	api.NewApiServer().Run()
 }

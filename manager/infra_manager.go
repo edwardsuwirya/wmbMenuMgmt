@@ -1,6 +1,7 @@
 package manager
 
 import (
+	"github.com/edwardsuwirya/wmbMenuMgmt/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"log"
@@ -14,8 +15,8 @@ type infra struct {
 	db *gorm.DB
 }
 
-func NewInfra(dataSourceName string) Infra {
-	resource, err := initDbResource(dataSourceName)
+func NewInfra(config *config.Config) Infra {
+	resource, err := initDbResource(config.DataSourceName)
 	if err != nil {
 		log.Panicln(err)
 	}
